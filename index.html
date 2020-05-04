@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rock Paper Scissors</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sebastián Fernandez">
+    <meta name="description" content="Basic rock paper scissors game">
+    <meta name="keywords" content="sebfernandez,rock,paper,scissors,odin project">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/favicon64px.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b15d641fc8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="h-box">
+            <div class="h-elements">
+                ROCK PAPER SCISSORS
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="m-box">
+            <div id="right-line" class="m-box-middle">
+                <h1>You</h1>
+                <h2 id="player-score">0</h2>
+                <div id="player-icon" class="icon-choice">
+                    <i id="scissors-icon" class="far fa-hand-scissors"></i>
+                    <i id="rock-icon" class="far fa-hand-rock"></i>
+                    <i id="paper-icon" class="far fa-hand-paper"></i>
+                </div>
+                <div class="decision">
+                    <img id="decision-player" src="Images/street-view-solid.svg"></img>
+                </div>
+            </div>
+            <div class="m-box-middle">
+                 <h1>Computer</h1>
+                 <h2 id="cpu-score">0</h2>
+                <div class="icon-choice">
+                    <i class="far fa-hand-scissors"></i>
+                    <i class="far fa-hand-rock"></i>
+                    <i class="far fa-hand-paper"></i>
+                </div>
+                <div class="decision">
+                    <img id="decision-cpu" src="Images/android-brands.svg"></img>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="f-box">
+            <div class="f-elements">
+                <div class="icon-size">
+                    <a href="https://github.com/SebFernandez/Rock-paper-scissors"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="f-elements">
+                by Sebastián Fernandez
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+<script src="script.js"></script>
+</html>
