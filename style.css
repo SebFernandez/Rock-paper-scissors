@@ -2,6 +2,8 @@ html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    width: 100%;
+    height: 100%;
     margin: 0px 0px 0px 0px;
 }
 
@@ -11,12 +13,15 @@ html {
     box-sizing: inherit;
 }
 
-a   {
-    color: inherit;
+body    {
+    box-sizing: inherit;
+    margin: inherit;
+    width: inherit;
+    height: inherit;
 }
 
-body    {
-    margin: 100% 100%;
+a   {
+    color: inherit;
 }
 
 header {
