@@ -59,6 +59,7 @@ main    {
     flex-direction: row;
     align-items: center;
     height: 600px;
+    overflow: hidden;
 }
 
 .m-box-middle {
