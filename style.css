@@ -75,7 +75,7 @@ main    {
 }
 
 .icon-choice   {
-    font-size: 60px;
+    font-size: 400%;
 }
 
 #scissors-icon:hover, #rock-icon:hover, #paper-icon:hover {
@@ -124,5 +124,5 @@ footer  {
 #icon-size  {
     font-size: 25px;
     padding-left: 1%;
-    padding-right: 1%;
+    padding-right: 0.5%;
 }
