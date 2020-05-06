@@ -33,7 +33,7 @@ header {
 
 .h-box  {
     background-attachment: scroll;
-    height: 100px;
+    height: 70px;
     background-color: #4387fd;
     display: flex;
     align-items: center;
@@ -91,9 +91,13 @@ main    {
 }
 
 #decision-player:hover  {
-    /*background-color: #f08080;*/
+    /*background-color: #dbf080;*/
 
     background-color: #90ee90;
+}
+
+#player-score, #cpu-score   {
+    padding: 3%;
 }
 
 .decision   {
