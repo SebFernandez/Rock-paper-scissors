@@ -86,6 +86,14 @@ main    {
     padding: 15px 15px;
     height: 100px;
     width: 100px;
+    transition: background-color 0.7s;
+    background-color: #FFFFFF;
+}
+
+#decision-player:hover  {
+    /*background-color: #f08080;*/
+
+    background-color: #90ee90;
 }
 
 .decision   {
