@@ -47,9 +47,8 @@ header {
 }
 
 main    {
-    background-attachment: scroll;
     position: absolute;
-    top: 20%;
+    top: 25%;
     left: 5%;
     right: 5%;
 }
@@ -58,7 +57,7 @@ main    {
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 600px;
+    height: 200%;
     overflow: hidden;
 }
 
@@ -110,29 +109,20 @@ main    {
 
 footer  {
     position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
     bottom: 0;
     left: 0;
     right: 0;
-}
-
-.f-box  {
-    display: flex;
-    align-items: center;
-    background-attachment: scroll;
-    height: 40px;
     background-color: #474747;
-}
-
-.f-elements {
-    margin-left: 10px;
     color: aliceblue;
     font-size: 13px;
-    display: inline-flex;
-    align-items: center;
-    flex-direction: row;
+    height: 40px;
 }
 
-.icon-size  {
+#icon-size  {
     font-size: 25px;
-    margin-right: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
 }
