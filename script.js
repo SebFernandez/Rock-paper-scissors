@@ -106,10 +106,10 @@ function checkWeapons (weaponP, weaponC, weaponW)   {
         cpuScore.style.borderColor = '#90ee90'
     } else {
         playerScore.style.borderColor = '#ffffff'
-        playerChoice.style.backgroundColor = '#ffffff'
+        playerChoice.style.backgroundColor = '#dbd9d9'
         playerName.style.borderBottomColor = '#ffffff'
         cpuName.style.borderBottomColor = '#ffffff'
-        cpuChoice.style.backgroundColor = '#ffffff'
+        cpuChoice.style.backgroundColor = '#dbd9d9'
         cpuScore.style.borderColor = '#ffffff'
     }
 }
