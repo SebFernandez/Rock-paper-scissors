@@ -8,6 +8,8 @@ var playerPaper = document.getElementById("paper-icon");
 var playerScissors = document.getElementById("scissors-icon");
 var playerName = document.getElementById("player");
 var cpuName = document.getElementById("cpu");
+var playerBox = document.getElementById("player-box");
+var cpuBox = document.getElementById("cpu-box");
 
 //Images path.
 var scissorsIcon = "Images/hand-scissors-regular.svg";
@@ -57,7 +59,13 @@ function weaponPlayerAssignment (icon) {
 function resetScore ()  {
     if (playerScore.textContent == 5 || cpuScore.textContent == 5) {
         playerScore.textContent = 0;
+        playerBox.style.backgroundColor = '#ffffff';
+        playerChoice.style.borderColor = '#ffffff';
         cpuScore.textContent = 0;
+        cpuBox.style.backgroundColor = '#ffffff';
+        cpuChoice.style.borderColor = '#ffffff';
+        playerBox.style.borderRightColor = '#474747';
+        cpuBox.style.borderLeftColor = '#474747';
     }
 }
 
@@ -82,27 +90,42 @@ function roundPlay (pWeapon, cWeapon)   {
 function checkWeapons (weaponP, weaponC, weaponW)   {
     if (weaponW == weaponP) {
         playerScore.textContent++;
-        playerScore.style.border = '5px solid #90ee90'
+        playerScore.style.borderColor = '#90ee90'
         playerChoice.style.backgroundColor = '#90ee90'
-        playerName.style.borderBottom = '5px solid #90ee90'
-        cpuName.style.borderBottom = '5px solid #ffffff'
+        playerName.style.borderBottomColor = '#90ee90'
+        cpuName.style.borderBottomColor = '#ffffff'
         cpuChoice.style.backgroundColor = '#f08080'
-        cpuScore.style.border = '5px solid #ffffff'
+        cpuScore.style.borderColor = '#ffffff'
     } else if (weaponW == weaponC) {
         cpuScore.textContent++;
-        cpuName.style.borderBottom = '5px solid #90ee90'
-        cpuScore.style.border = '5px solid #90ee90'
-        cpuChoice.style.backgroundColor = '#90ee90'
+        playerScore.style.borderColor = '#ffffff'
         playerChoice.style.backgroundColor = '#f08080'
-        playerScore.style.border = '5px solid #ffffff'
-        playerName.style.borderBottom = '5px solid #ffffff'
+        playerName.style.borderBottomColor = '#ffffff'
+        cpuName.style.borderBottomColor = '#90ee90'
+        cpuChoice.style.backgroundColor = '#90ee90'
+        cpuScore.style.borderColor = '#90ee90'
     } else {
-        playerScore.style.border = '5px solid #ffffff'
+        playerScore.style.borderColor = '#ffffff'
         playerChoice.style.backgroundColor = '#ffffff'
-        playerName.style.borderBottom = '5px solid #ffffff'
+        playerName.style.borderBottomColor = '#ffffff'
+        cpuName.style.borderBottomColor = '#ffffff'
         cpuChoice.style.backgroundColor = '#ffffff'
-        cpuScore.style.border = '5px solid #ffffff'
-        cpuName.style.borderBottom = '5px solid #ffffff'
+        cpuScore.style.borderColor = '#ffffff'
+    }
+}
+
+function checkWinner () {
+
+    if (playerScore.textContent == 5)   {
+        playerBox.style.backgroundColor = '#90ee90';
+        playerChoice.style.borderColor = '#90ee90';
+        playerBox.style.borderRightColor = '#ffffff';
+        cpuBox.style.borderLeftColor = '#ffffff';
+    }   else if (cpuScore.textContent == 5) {
+        cpuBox.style.backgroundColor = '#90ee90';
+        cpuChoice.style.borderColor = '#90ee90';
+        playerBox.style.borderRightColor = '#ffffff';
+        cpuBox.style.borderLeftColor = '#ffffff';
     }
 }
 
@@ -122,6 +145,7 @@ function playRound (e) {
     winnerWeapon = roundPlay (playerWeapon, cpuWeapon);
 
     checkWeapons (playerWeapon, cpuWeapon, winnerWeapon);
+    checkWinner ();
 
 }
 

@@ -68,10 +68,16 @@ main    {
     justify-content: center;
     height: 100%;
     width: 50%;
+    transition: background-color 0.7s;
+    border: 5px solid #ffffff;
 }
 
-#right-line   {
-    border-right: 5px solid #474747;
+#player-box {
+    border-right: 2.5px solid #474747;
+}
+
+#cpu-box    {
+    border-left: 2.5px solid #474747;
 }
 
 .icon-choice   {
@@ -86,18 +92,19 @@ main    {
     padding: 15px 15px;
     height: 100px;
     width: 100px;
+    border: 5px solid #ffffff;
     transition: background-color 0.7s;
-    background-color: #FFFFFF;
-}
-
-#decision-player:hover  {
-    /*background-color: #dbf080;*/
-
-    background-color: #90ee90;
 }
 
 #player-score, #cpu-score   {
     padding: 3%;
+    border: 5px solid #ffffff;
+    transition: border-color 0.7s;
+}
+
+#player, #cpu   {
+    border-bottom: 5px solid #ffffff;
+    transition: border-color 0.7s;
 }
 
 .decision   {
@@ -108,7 +115,6 @@ main    {
     justify-content: center;
     border-top: 5px solid #474747;
     padding-top: 70px;
-
 }
 
 footer  {
